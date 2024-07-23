@@ -5,8 +5,8 @@ const websiteViewsChart = {
   height: 220,
   series: [
     {
-      name: "Views",
-      data: [50, 20, 10, 22, 50, 10, 40],
+      name: "Vues",
+      data: [25, 10, 5, 11, 20, 10, 35],
     },
   ],
   options: {
@@ -14,13 +14,13 @@ const websiteViewsChart = {
     colors: "#388e3c",
     plotOptions: {
       bar: {
-        columnWidth: "16%",
-        borderRadius: 5,
+        columnWidth: "17%",
+        borderRadius: 4,
       },
     },
     xaxis: {
       ...chartsConfig.xaxis,
-      categories: ["M", "T", "W", "T", "F", "S", "S"],
+      categories: ["L", "M", "M", "J", "V", "S", "D"],
     },
   },
 };
@@ -30,13 +30,13 @@ const dailySalesChart = {
   height: 220,
   series: [
     {
-      name: "Sales",
-      data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
+      name: "Voyages",
+      data: [50, 40, 30, 70,60, 80, 76, 85, 93],
     },
   ],
   options: {
     ...chartsConfig,
-    colors: ["#0288d1"],
+    colors: ["#388e3c"],
     stroke: {
       lineCap: "round",
     },
@@ -66,12 +66,12 @@ const completedTaskChart = {
   series: [
     {
       name: "Sales",
-      data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
+      data: [55, 45, 35, 75,65, 85, 80, 90, 100],
     },
   ],
   options: {
     ...chartsConfig,
-    colors: ["#388e3c"],
+    colors: ["#0288d1"],
     stroke: {
       lineCap: "round",
     },
@@ -98,8 +98,8 @@ const completedTasksChart = {
   ...completedTaskChart,
   series: [
     {
-      name: "Tasks",
-      data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+      name: "Demande de Transport",
+      data: [55, 45, 35, 75,65, 85, 80, 90, 100],
     },
   ],
 };
@@ -107,25 +107,26 @@ const completedTasksChart = {
 export const statisticsChartsData = [
   {
     color: "white",
-    title: "Website View",
-    description: "Last Campaign Performance",
-    footer: "campaign sent 2 days ago",
+    title: "Vue du site web",
+    description: "Performance de la dernière campagne",
+    footer: "Campagne envoyée il y a 2 jours",
     chart: websiteViewsChart,
   },
   {
     color: "white",
-    title: "Daily Sales",
-    description: "15% increase in today sales",
-    footer: "updated 4 min ago",
-    chart: dailySalesChart,
-  },
-  {
-    color: "white",
-    title: "Completed Tasks",
-    description: "Last Campaign Performance",
+    title: "Demande de Transport",
+    description: "Augmentation de 10 % des Demandes aujourd'hui",
     footer: "just updated",
     chart: completedTasksChart,
   },
+  {
+    color: "white",
+    title: "Voyages quotidiens",
+    description: "Augmentation de 10 % des voyages aujourd'hui",
+    footer: "updated 4 min ago",
+    chart: dailySalesChart,
+  },
+
 ];
 
 export default statisticsChartsData;

@@ -1,53 +1,55 @@
-import {
-  BanknotesIcon,
-  UserPlusIcon,
-  UsersIcon,
+import {  UsersIcon,
   ChartBarIcon,
+  TruckIcon,
+  MapIcon,
 } from "@heroicons/react/24/solid";
 
 export const statisticsCardsData = [
   {
     color: "gray",
-    icon: BanknotesIcon,
-    title: "Today's Money",
-    value: "$53k",
+    icon: TruckIcon,
+    title: "Transporteur",
+    value: "95",
     footer: {
       color: "text-green-500",
-      value: "+55%",
-      label: "than last week",
+      value: "voir tous",
+      label: "les transporteurs",
+      href: "/transporteurs"
     },
   },
   {
     color: "gray",
     icon: UsersIcon,
-    title: "Today's Users",
+    title: "Expéditeur",
     value: "2,300",
     footer: {
       color: "text-green-500",
-      value: "+3%",
-      label: "than last month",
+      value: "voir tous",
+      label: "Les expéditeurs",
+      href: "/expediteurs"
     },
   },
   {
     color: "gray",
-    icon: UserPlusIcon,
-    title: "New Clients",
-    value: "3,462",
+    icon: MapIcon,
+    title: "voyages",
+    value: "3,715",
     footer: {
-      color: "text-red-500",
-      value: "-2%",
-      label: "than yesterday",
+      color: "text-blue-500",
+      value: "voir tous",
+      label: "Les voyages",
+      href: "/voyages"
     },
   },
   {
     color: "gray",
     icon: ChartBarIcon,
-    title: "Sales",
-    value: "$103,430",
+    title: "gains",
+    value: "103,430 Dhs",
     footer: {
       color: "text-green-500",
-      value: "+5%",
-      label: "than yesterday",
+      value: "vois tous",
+      label: "Les gains",
     },
   },
 ];
